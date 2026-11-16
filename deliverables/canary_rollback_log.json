@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-11-16T22:16:54Z",
+  "sla_configuration": {
+    "max_p95_latency_ms": 4500.0,
+    "max_error_rate_pct": 2.0,
+    "max_security_breaches": 0
+  },
+  "stages": [
+    {
+      "stage": "10% Canary",
+      "canary_percent": 10,
+      "requests_total": 50,
+      "canary_routed": 10,
+      "baseline_routed": 40,
+      "p95_latency_ms": 240.85,
+      "error_rate_pct": 0.0,
+      "security_breaches": 0,
+      "sla_passed": true
+    },
+    {
+      "stage": "50% Canary",
+      "canary_percent": 50,
+      "requests_total": 50,
+      "canary_routed": 21,
+      "baseline_routed": 29,
+      "p95_latency_ms": 27.13,
+      "error_rate_pct": 0.0,
+      "security_breaches": 0,
+      "sla_passed": true
+    },
+    {
+      "stage": "100% Full Rollout",
+      "canary_percent": 100,
+      "requests_total": 50,
+      "canary_routed": 50,
+      "baseline_routed": 0,
+      "p95_latency_ms": 23.95,
+      "error_rate_pct": 0.0,
+      "security_breaches": 0,
+      "sla_passed": true
+    }
+  ],
+  "rollback_triggered": false,
+  "rollback_reason": "None (All SLA criteria met)",
+  "final_deployment_status": "DEPLOYED_100_PERCENT"
+}

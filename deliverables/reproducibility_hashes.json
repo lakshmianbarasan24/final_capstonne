@@ -1,0 +1,7 @@
+{
+  "model_checkpoint": "gemini-2.0-flash",
+  "model_hash": "3f6b29e1289036a7b7ff7667bc3fc95d79da9d2ee9cc811d626aa89655b93bd3",
+  "dataset_hash": "e32dd42152d12c2992a6663693d66cf9b737c21818a27cbc2b36b0c45d22cea9",
+  "dependency_hash": "228d302d9516d9313d4489627a47d8167307873f2f334727f3da12ab142bd409",
+  "prompt_hash": "cbe84cfe8d9a0380408ccc3637fba30f26f34748e28cee598c0956bf36a8c4f0"
+}

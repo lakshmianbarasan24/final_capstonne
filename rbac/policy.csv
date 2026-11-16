@@ -1,0 +1,12 @@
+# Role definitions and permissions
+# sub (role/user), obj (path pattern), act (action)
+p, admin, *, *
+p, reviewer, public/*, read
+p, reviewer, src/*, read
+p, reviewer, samples/clean/*, read
+p, reviewer, samples/buggy/*, read
+p, reviewer, samples/adversarial/*, read
+p, reviewer, data/samples/clean/*, read
+p, reviewer, data/samples/buggy/*, read
+p, reviewer, data/samples/adversarial/*, read
+# Note: restricted/*, data/samples/restricted/*, secrets/*, and .env are explicitly absent for reviewer
